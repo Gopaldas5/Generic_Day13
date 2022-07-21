@@ -36,9 +36,21 @@ class GenericMaximumNumberTest {
         assertEquals(11,max);
     }
     @Test
-    void thirdMaxFloatNumber(){
+    void firstMaxStringNumber(){
         GenericMaximumNumber tc = new GenericMaximumNumber();
-        float max = GenericMaximumNumber.maxFloatNumber(1.3f, 1.6f, 1.1f);
+        String max = GenericMaximumNumber.maxStringNumber("apple", "pear", "orange");
+        assertEquals(11,max);
+    }
+    @Test
+    void secondMaxStringNumber(){
+        GenericMaximumNumber tc = new GenericMaximumNumber();
+        String max = GenericMaximumNumber.maxStringNumber("ram", "rohan", "sita");
+        assertEquals(11,max);
+    }
+    @Test
+    void thirdMaxStringNumber(){
+        GenericMaximumNumber tc = new GenericMaximumNumber();
+        String max = GenericMaximumNumber.maxStringNumber("bird", "animal", "human");
         assertEquals(11,max);
     }
 
